@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    color: #010103;
+    user-select: none;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 3rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+h4 {
+    font-family: "Rubik", sans-serif;
+    @apply text-[1.2rem]
+}
+
+p {
+    font-size: 1rem;
+    color: #706f7b;
+    font-family: "Rubik", sans-serif;
+}
+
+b,
+i {
+    @apply text-main text-lg
+}
+
+label {
+    @apply font-bold mb-3
+}
+
+input {
+    @apply outline-none text-black h-12 font-sans;
+    font-size: 15px !important;
+}
+
+select {
+    @apply text-text-gray text-sm font-medium outline-none
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='number']:focus,
+input[type='date']:focus {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+input[type='checkbox']:focus {
+    box-shadow: none !important;
+}
+
+input[type='time']:focus {
+    box-shadow: none !important;
+    border: 1px solid #6B7280;
+}
+
+select:focus {
+    box-shadow: none !important;
+    outline: none !important;
+    @apply border border-neutral-300
+}
+
+a {
+    font-size: 1rem;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+a:hover {
+    @apply text-main underline
+}
+
+.register-btn {
+    @apply bg-main text-white;
+    font-size: large;
+    border-radius: 4px;
+    padding: 0.5rem 1.3rem;
+    box-shadow: 0 10px 15px 0 rgb(255 83 48 / 35%);
+    transition: all 0.3s;
+}
+
+.register-btn:hover {
+    box-shadow: 0 10px 15px 0 rgb(255 83 48 / 50%);
+    background-color: #f1371e;
+}
+
+.signin-btn {
+    font-size: large;
+    font-weight: medium;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.signin-btn:hover {
+    @apply text-main
+}
+
+.pick-car-btn {
+    @apply w-[250px] py-3 text-left pl-5 font-medium text-lg
+}
+
+.picked {
+    @apply bg-main text-white
+}
+
+.footer-link {
+    @apply font-normal hover:no-underline
+}
+
+.policy-link {
+    @apply hover:no-underline hover:text-black font-normal
+}
+
+.pick-review-btn {
+    @apply w-full h-[55.5px] absolute
+}
+
+.person-info-input {
+    @apply w-[95%] bg-neutral-300 border-0 pl-3
+}
+
+.person-info-email {
+    @apply w-[97.5%] bg-neutral-300 border-0 pl-3
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
