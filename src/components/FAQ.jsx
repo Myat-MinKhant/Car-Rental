@@ -1,22 +1,11 @@
-// import { useState } from 'react';
 import './styles/faq.css';
 import Faq from 'react-faq-component';
 
 export default function FAQ() {
-    // const [isActive, setIsActive] = useState('')
-
-    // const handleClick = () => {
-    //     if (isActive !== 'picked') {
-    //         setIsActive('picked')
-    //     } else {
-    //         setIsActive('')
-    //     }
-    // }
-
     return (
-        <section className=" w-[55vw] m-auto mt-32 relative">
-            <img src='https://www.nicepng.com/png/detail/280-2806097_car-back-right-top-new-picsart-background.png' alt="" className='absolute top-28 -left-[500px] w-[550px]' />
-            <div className=" text-center mb-14 w-[48vw] m-auto">
+        <section className=" w-full laptop:w-[64vw] tablet:px-10 m-auto px-3 mt-32 relative">
+            <img src='https://www.nicepng.com/png/detail/280-2806097_car-back-right-top-new-picsart-background.png' alt="faq-car" className=' absolute top-28 -left-[500px] w-[550px]' />
+            <div className=" text-center mb-14 w-full tablet:w-[80vw] laptop:w-full m-auto ">
                 <h4 className=" uppercase text-text-gray mb-1">FAQ</h4>
                 <h2 className=" font-bold mb-5 underline underline-offset-[12px] decoration-dotted text-main">&nbsp;Frequently Asked Questions&nbsp; </h2>
                 <p>Frequently Asked Questions About the Car Rental Booking Process on Our Website Answer to Common Concerns and Inquiries.</p>
@@ -25,7 +14,6 @@ export default function FAQ() {
                 <Faq
                     data={data}
                     styles={{
-                        // bgColor: isView ? '#ff4d30' : '',
                         rowTitleColor: "black",
                         rowTitleTextSize: '17px',
                         rowContentColor: "#706f7b",
@@ -65,3 +53,4 @@ const data = {
             content: "In the event of an accident we recommend that you first contact the police so they analyze the situation and check to see who is at fault.If this is not possible, you will have to complete the CAI Accident Statement form you will find in the vehicle.You will then need to send an electronic copy of the CAI form to the rental office as soon as possible(for more information on the contact details of our offices please refer to the tabs for our offices) and deliver the hard copy when you return the vehicle.If the vehicle is not drivable please contact our Roadside Assistance and follow the instructions from our operator.You can find the contact details for Roadside Assistance on your rental contract or on our dedicated web page."
         }]
 }
+

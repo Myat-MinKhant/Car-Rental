@@ -1,11 +1,9 @@
 import Hero from "./Hero";
-import Navbar from "./Navbar";
 import Search from "./Search";
 
 export default function Header() {
     return (
-        <header className=" w-screen">
-            <Navbar />
+        <header className=" px-3 laptop:px-7 desktop:px-20">
             <Hero />
             <Search />
         </header>

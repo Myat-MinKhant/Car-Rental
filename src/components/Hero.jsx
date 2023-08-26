@@ -4,29 +4,31 @@ import hero_car from '../assets/header-car.png'
 import hero_bg from '../assets/hero-bg.png'
 export default function Hero() {
     return (
-        <section className=" w-[95vw] h-[40vw] ml-32 flex">
-            <div className=" w-4/12 h-full pt-32">
-                <h1 className=" mb-5">Find, book and <br />
-                    rental car in <span className=' text-main underline underline-offset-4'>Easy</span>
-                    <br />steps.</h1>
-                <p>Get a car whatever and whenever you need it with your <br /> iOS or Android device.</p>
-                <div className=' flex gap-3 mt-5'>
-                    <div className=' min-w-[140px]'>
+        <section className=" w-full flex tablet:w-[600px] tablet:m-auto tablet:mt-5 laptop:w-[95vw]">
+            <div className=" w-full text-center pt-16 laptop:text-left laptop:w-5/12 laptop:pt-32">
+                <h1 className="font-bold mb-7 laptop:mb-5 laptop:text-5xl laptop:font-medium ">
+                    Find, book and rental car with
+                    <span className=' text-main underline underline-offset-4'> Easy</span>
+                    &nbsp; steps
+                </h1>
+                <p className=' px-5 tablet:px-24 laptop:px-0'>Get a car whatever and whenever you need it with your iOS or Android device.</p>
+                <div className=' mt-7 gap-1 tablet:flex tablet:justify-center tablet:gap-5 laptop:justify-start laptop:mt-5'>
+                    <div className=' mb-3 tablet:w-1/3'>
                         <button>
-                            <img src={playstore} alt="playstore-btn" width={135} className=' hover:w-[140px] transition-all' />
+                            <img src={playstore} alt="playstore-btn" />
                         </button>
                     </div>
-                    <div>
+                    <div className=' tablet:w-1/3'>
                         <button>
-                            <img src={appstore} alt="appstore-btn" width={135} className=' hover:w-[140px] transition-all' />
+                            <img src={appstore} alt="appstore-btn" />
                         </button>
                     </div>
                 </div>
             </div>
 
-            <div className=' flex-auto relative overflow-hidden'>
-                <img src={hero_bg} alt="hero-bg" className=' absolute w-[400px] right-10 -top-5' />
-                <img src={hero_car} alt="hero-car" className=' absolute w-[550px] bottom-24 left-10 ' />
+            <div className=' hidden relative overflow-hidden laptop:flex laptop:flex-auto'>
+                <img src={hero_bg} alt="hero-bg" className=' absolute w-[400px] right-10 -top-5 laptop:-right-20 laptop:-top-12 desktop:-right-5 desktop:-top-7'/>
+                <img src={hero_car} alt="hero-car" className=' absolute w-[550px] bottom-24 left-10 laptop:-bottom-5 laptop:left-0' />
             </div>
         </section>
     )

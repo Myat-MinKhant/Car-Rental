@@ -4,15 +4,15 @@ import drive from '../assets/icon3.png'
 
 export default function Step() {
     return (
-        <section className=" w-[80vw] mx-auto mt-32">
-            <div className=" text-center mb-20">
+        <section className=" w-full desktop:w-[80vw] mx-auto laptop:px-5 desktop:px-0 mt-32">
+            <div className=" text-center mb-20 tablet:px-32">
                 <h4 className=" uppercase text-text-gray mb-8">How it works</h4>
                 <h2 className=" font-bold">Rentgo following 3 working Steps</h2>
             </div>
 
-            <div className=" grid grid-cols-3">
+            <div className=" grid grid-cols-1 laptop:grid-cols-3">
                 <div className=" text-center">
-                    <div className=' w-[320px] h-[320px] m-auto mb-5 shadow-2xl hover:scale-[1.03] transition-all'>
+                    <div className=' w-full laptop:w-[300px] desktop:w-[320px] h-[320px] m-auto mb-5 laptop:shadow-md laptop:hover:scale-[1.03] laptop:transition-all'>
                         <div className=' w-40 h-40 m-auto mb-5 pt-10 mt-5'>
                             <img src={car} alt="icon_img" className='date m-auto w-[85px]' />
                         </div>
@@ -26,7 +26,7 @@ export default function Step() {
                 </div>
 
                 <div className=" text-center">
-                    <div className=' w-[320px] h-[320px] m-auto mb-5 shadow-2xl hover:scale-[1.03] transition-all'>
+                    <div className=' w-full laptop:w-[300px] desktop:w-[320px] h-[320px] m-auto mb-5 laptop:shadow-md laptop:hover:scale-[1.03] laptop:transition-all'>
                         <div className=' w-40 h-40 m-auto mb-5 pt-16 mt-5'>
                             <img src={date} alt="icon_img" className=' m-auto w-16' />
                         </div>
@@ -40,7 +40,7 @@ export default function Step() {
                 </div>
 
                 <div className=" text-center">
-                    <div className=' w-[320px] h-[320px] m-auto mb-5 shadow-2xl hover:scale-[1.03] transition-all'>
+                    <div className=' w-full laptop:w-[300px] desktop:w-[320px] h-[320px] m-auto mb-5 laptop:shadow-md laptop:hover:scale-[1.03] laptop:transition-all'>
                         <div className=' w-40 h-40 m-auto mb-5 pt-10 mt-5'>
                             <img src={drive} alt="icon_img" className='m-auto w-[85px]' />
                         </div>

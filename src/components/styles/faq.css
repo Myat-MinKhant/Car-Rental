@@ -12,19 +12,7 @@
     padding-bottom: 15px !important;
 }
 
-
 .row-content-text {
     font-weight: 600;
 }
 
-.row-title::after {
-    display: none;
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #f1371e;
-    opacity: 0.8;
-}
