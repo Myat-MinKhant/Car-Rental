@@ -13,7 +13,7 @@ export default function Hero() {
                 </h1>
                 <p className=' px-5 tablet:px-24 laptop:px-0'>Get a car whatever and whenever you need it with your iOS or Android device.</p>
                 <div className=' mt-7 gap-1 tablet:flex tablet:justify-center tablet:gap-5 laptop:justify-start laptop:mt-5'>
-                    <div className=' mb-3 tablet:w-1/3'>
+                    <div className=' mb-7 tablet:w-1/3'>
                         <button>
                             <img src={playstore} alt="playstore-btn" />
                         </button>

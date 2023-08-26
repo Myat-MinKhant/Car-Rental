@@ -32,7 +32,7 @@ export default function PickCar() {
                     adventure or business trip
                 </p>
             </div>
-            <div className='mt-16 flex flex-col laptop:flex-row laptop:justify-between desktop:justify-end px-20 gap-10 desktop:gap-20'>
+            <div className='mt-16 flex flex-col laptop:flex-row laptop:justify-between desktop:justify-end desktop:px-20 gap-10 desktop:gap-20'>
 
                 <div className=" flex flex-col w-full tablet:px-5 laptop:w-1/4" >
                     {cars.map(car => (
