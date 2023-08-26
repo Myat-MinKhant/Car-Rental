@@ -32,7 +32,7 @@ export default function PickCar() {
                     adventure or business trip
                 </p>
             </div>
-            <div className='mt-16 flex flex-col laptop:flex-row laptop:justify-between desktop:justify-end desktop:px-20 gap-10 desktop:gap-20'>
+            <div className='mt-16 flex flex-col laptop:flex-row laptop:justify-center desktop:justify-end desktop:px-20 gap-10 desktop:gap-20'>
 
                 <div className=" flex flex-col w-full tablet:px-5 laptop:w-1/4" >
                     {cars.map(car => (
@@ -40,8 +40,8 @@ export default function PickCar() {
                     ))}
                 </div>
 
-                <div className=' tablet:flex tablet:gap-5 tablet:px-5 laptop:px-0 laptop:pr-5 desktop:gap-20 desktop:pr-0'>
-                    <div className=' w-full laptop:w-2/3 desktop:w-[600px] pt-5 tablet:pt-7 laptop:pt-1
+                <div className=' tablet:flex tablet:gap-5 tablet:px-5 laptop:px-0 laptop:pr-5 laptop:gap-20 desktop:pr-0'>
+                    <div className=' w-[80%] m-auto laptop:m-0 laptop:w-2/3 desktop:w-[600px] pt-5 tablet:pt-7 laptop:pt-1
                     tablet:w-1/2'>
                         <img src={isPick[0].img} alt={isPick[0].model} className=' tablet:h-[360px] laptop:h-[full]'/>
                     </div>
