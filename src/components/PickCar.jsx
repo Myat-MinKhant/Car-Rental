@@ -32,21 +32,19 @@ export default function PickCar() {
                     adventure or business trip
                 </p>
             </div>
-            <div className='mt-16 flex flex-col laptop:flex-row laptop:justify-center desktop:justify-end desktop:px-20 gap-10 desktop:gap-20'>
-
-                <div className=" flex flex-col w-full tablet:px-5 laptop:w-1/4" >
+            <div className='w-full mt-16 flex flex-col gap-10 laptop:flex-row laptop:px-5 laptop:gap-0   desktop:px-20 desktop:gap-10 laptop:justify-center'>
+                <div className=" flex flex-col w-full tablet:px-5 laptop:w-fit laptop:px-0" >
                     {cars.map(car => (
                         <button onClick={() => handleClick(car.id)} key={car.id} className={`pick-car-btn ${coloringButton(car.id)}`}>{car.name}</button>
                     ))}
                 </div>
 
-                <div className=' tablet:flex tablet:gap-5 tablet:px-5 laptop:px-0 laptop:pr-5 laptop:gap-20 desktop:pr-0'>
-                    <div className=' w-[80%] m-auto laptop:m-0 laptop:w-2/3 desktop:w-[600px] pt-5 tablet:pt-7 laptop:pt-1
-                    tablet:w-1/2'>
-                        <img src={isPick[0].img} alt={isPick[0].model} className=' tablet:h-[360px] laptop:h-[full]'/>
+                <div className='flex flex-col gap-12 tablet:flex-row tablet:gap-5 tablet:px-5 desktop:pr-0 desktop:gap-10 laptop:gap-10'>
+                    <div className=' w-full h-fit m-auto laptop:m-0 pt-5 tablet:pt-7 tablet:w-1/2 laptop:w-[500px] desktop:w-[700px] laptop:pt-0'>
+                        <img src={isPick[0].img} alt={isPick[0].model} className='w-full tablet:h-[360px] laptop:h-[400px] desktop:h-[450px]'/>
                     </div>
 
-                    <div className=' w-full laptop:w-2/4 tablet:w-1/2'>
+                    <div className=' w-full tablet:w-1/2 laptop:w-[40%]'>
                         <h3 className=' text-lg text-white bg-main rounded-t-sm py-2 pl-7 laptop:pl-5 tracking-widest tablet:tracking-normal desktop:tracking-widest desktop:pl-7'>
                             <span className=' font-bold text-2xl'> ${isPick[0].price} </span> / rent per day
                         </h3>

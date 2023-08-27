@@ -92,7 +92,7 @@ export default function Search() {
                     <input
                         id="pick-up-date"
                         type="date"
-                        className=" h-12 border-0"
+                        className=" h-12 border-0 min-w-full"
                         value={pickUpDate}
                         onChange={handlePickUpDate}
                         min={moment().toISOString().split("T")[0]}
@@ -108,7 +108,7 @@ export default function Search() {
                     <input
                         id="return-date"
                         type="date"
-                        className=" h-12 border-0"
+                        className=" h-12 border-0 min-w-full"
                         value={dropOffDate}
                         onChange={handleDropOffDate}
                         min={pickUpDate ? pickUpDate : null}
@@ -117,7 +117,7 @@ export default function Search() {
                     />
                 </div>
 
-                <button onClick={handleSearch} type="button" className=" py-5 h-fit tablet:py-3 tablet:mt-9 laptop:mt-3  laptop:h-[70%] desktop:h-[90%] desktop:mt-2 bg-main text-white text-xl rounded-sm hover:bg-[#f1371e]">
+                <button onClick={handleSearch} type="button" className=" py-5 h-fit tablet:py-3 tablet:mt-9 laptop:mt-5 laptop:h-[80%] desktop:h-[90%] desktop:mt-2 bg-main text-white text-xl rounded-sm hover:bg-[#f1371e]">
                     Search
                 </button>
                 <PopUpModal

@@ -8,7 +8,7 @@ export default {
   theme: {
     screens: {
       mobile: '0px',
-      tablet: '700px',
+      tablet: '760px',
       laptop: '1024px',
       desktop: '1440px',
     },

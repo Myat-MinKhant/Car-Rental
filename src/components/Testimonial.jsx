@@ -1,8 +1,9 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
 import StartQuote from '../assets/quotation1.png';
 import EndQuote from '../assets/quotation2.png';
 import 'swiper/css';
-// import './swiper.css';
+import 'swiper/css/pagination';
 import reviews from './ReviewData';
 export default function Testimonial() {
     return (
@@ -13,12 +14,17 @@ export default function Testimonial() {
             <h2 className=' font-bold mb-7'>{`Client's Testimonials`}</h2>
 
             <Swiper
+                style={{
+                    "--swiper-pagination-color": "#ff4d30",
+                }}
                 slidesPerView={1}
+                pagination={{ clickable: true, }}
+                modules={[Pagination]}
                 className=" w-full"
             >
                 {reviews.map(review => (
                     <SwiperSlide key={review.id}>
-                        <div className=' w-full tablet:w-[90%] min-h-[272px] mt-12 m-auto py-10 px-5 tablet:px-10 rounded-xl text-left bg-zinc-200'>
+                        <div className=' w-full tablet:w-[90%] min-h-[300px] mt-12 m-auto py-10 px-5 tablet:px-10 rounded-xl text-left bg-zinc-200'>
                             <p className=' text-2xl text-black mb-8 leading-relaxed'>
                                 {review.review}
                             </p>
@@ -33,6 +39,6 @@ export default function Testimonial() {
                     </SwiperSlide>
                 ))}
             </Swiper>
-        </section>
+        </section >
     )
 }
