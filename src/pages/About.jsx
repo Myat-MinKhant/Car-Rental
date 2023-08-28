@@ -27,21 +27,21 @@ const About = () => {
                 <img src={icon1} alt="icon1" className=' mx-auto mb-5 tablet:mx-0' />
                 <div className=' tablet:flex tablet:items-start gap-5'>
                   <h1 className='mb-5 font-bold'>20</h1>
-                  <p className=' w-1/3'>Car Types</p>
+                  <p className=' w-1/3 m-auto tablet:m-0'>Car Types</p>
                 </div>
               </div>
               <div>
                 <img src={icon2} alt="icon2" className=' mx-auto mb-5 tablet:mx-0' />
                 <div className=' tablet:flex tablet:items-start gap-5'>
                   <h1 className='mb-5 font-bold'>85</h1>
-                  <p className=' w-1/2'>Rental Outlets</p>
+                  <p className=' w-1/2 m-auto tablet:m-0'>Rental Outlets</p>
                 </div>
               </div>
               <div>
                 <img src={icon3} alt="icon3" className=' mx-auto mb-5 tablet:mx-0' />
                 <div className=' tablet:flex tablet:items-start gap-5'>
                   <h1 className='mb-5 font-bold'>75</h1>
-                  <p className='w-1/2'>Repair Shop</p>
+                  <p className='w-1/2 m-auto tablet:m-0'>Repair Shop</p>
                 </div>
               </div>
             </div>

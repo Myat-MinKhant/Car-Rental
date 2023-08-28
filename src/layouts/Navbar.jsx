@@ -59,11 +59,11 @@ export default function Navbar() {
                             <i className="fa-solid fa-xmark text-black text-4xl absolute top-9 right-7"></i>
                         </div>
                         <ul className=' text-center flex flex-col gap-4 tablet:gap-10 my-auto'>
-                            <li><Link to='/' className='text-2xl font-normal'>Home</Link></li>
-                            <li><Link to='/about' className='text-2xl font-normal'>About</Link></li>
-                            <li><Link to='/models' className='text-2xl font-normal'>Models</Link></li>
-                            <li><Link to='/testimonials' className='text-2xl font-normal'>Testimonials</Link></li>
-                            <li><Link to='/contact'>Contact</Link></li>
+                            <li><Link to='/' onClick={() => setOpen('')} className='text-2xl font-normal'>Home</Link></li>
+                            <li><Link to='/about' onClick={() => setOpen('')} className='text-2xl font-normal'>About</Link></li>
+                            <li><Link to='/models' onClick={() => setOpen('')} className='text-2xl font-normal'>Models</Link></li>
+                            <li><Link to='/testimonials' onClick={() => setOpen('')} className='text-2xl font-normal'>Testimonials</Link></li>
+                            <li><Link to='/contact' onClick={() => setOpen('')} className='text-2xl font-normal'>Contact</Link></li>
                         </ul>
                     </div>
                 </div>
