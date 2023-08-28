@@ -1,6 +1,6 @@
 import { useState } from "react";
 import PopUpModal from "./Modal";
-import carsData from "./CarData";
+import carsData from "./data/CarData";
 import { Alert } from "flowbite-react";
 import moment from 'moment';
 

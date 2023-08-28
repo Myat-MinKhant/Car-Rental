@@ -5,6 +5,7 @@ import Footer from "./layouts/Footer"
 import About from './pages/About'
 import Testimonials from './pages/Testimonials'
 import Contact from './pages/Contact'
+import Models from './pages/Models'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/about" element={<About />} />
+        <Route path="/models" element={<Models />} />
         <Route path="/testimonials" element={<Testimonials />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>

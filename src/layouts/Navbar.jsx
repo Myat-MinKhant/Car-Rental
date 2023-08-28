@@ -27,7 +27,7 @@ export default function Navbar() {
     return (
         <nav className='w-screen h-20 flex flex-wrap items-center px-3 laptop:px-7 justify-between desktop:px-20'>
             <div className={` scroll-up hidden ${showButton()}`} onClick={scrollToTop}>
-            <i className="fa-solid fa-chevron-up text-white z-30" />
+                <i className="fa-solid fa-chevron-up text-white z-30" />
             </div>
             <Link to='/'>
                 <div className=' flex gap-3 mt-3 cursor-pointer'>
@@ -42,11 +42,11 @@ export default function Navbar() {
             <div>
                 <div>
                     <ul className='mobile:hidden laptop:flex items-center gap-5'>
-                        <li><a href='/'>Home</a></li>
-                        <li><a href='/about'>About</a></li>
-                        <li><a href='/'>Models</a></li>
-                        <li><a href='/testimonials'>Testimonials</a></li>
-                        <li><a href='/contact'>Contact</a></li>
+                        <li><Link to='/'>Home</Link></li>
+                        <li><Link to='/about'>About</Link></li>
+                        <li><Link to='/models'>Models</Link></li>
+                        <li><Link to='/testimonials'>Testimonials</Link></li>
+                        <li><Link to='/contact'>Contact</Link></li>
                     </ul>
                 </div>
 
@@ -59,11 +59,11 @@ export default function Navbar() {
                             <i className="fa-solid fa-xmark text-black text-4xl absolute top-9 right-7"></i>
                         </div>
                         <ul className=' text-center flex flex-col gap-4 tablet:gap-10 my-auto'>
-                            <li><a href='/' className='text-2xl font-normal'>Home</a></li>
-                            <li><a href='/about' className='text-2xl font-normal'>About</a></li>
-                            <li><a href='/' className='text-2xl font-normal'>Models</a></li>
-                            <li><a href='/testimonials' className='text-2xl font-normal'>Testimonials</a></li>
-                            <li><a href='/contact' className='text-2xl font-normal'>Contact</a></li>
+                            <li><Link to='/' className='text-2xl font-normal'>Home</Link></li>
+                            <li><Link to='/about' className='text-2xl font-normal'>About</Link></li>
+                            <li><Link to='/models' className='text-2xl font-normal'>Models</Link></li>
+                            <li><Link to='/testimonials' className='text-2xl font-normal'>Testimonials</Link></li>
+                            <li><Link to='/contact'>Contact</Link></li>
                         </ul>
                     </div>
                 </div>
