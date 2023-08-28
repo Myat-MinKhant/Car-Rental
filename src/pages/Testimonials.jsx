@@ -4,7 +4,7 @@ import Testimonial from "../components/Testimonial"
 const Testimonials = () => {
   return (
     <div>
-      <header className=" w-full h-80 pt-20 pl-5 laptop:pl-8 desktop:pl-20">
+      <header className=" w-full h-48 pt-20 pl-5 laptop:pl-8 desktop:pl-20">
         <h2 className=" font-bold">Testimonials</h2>
         <div className=" flex gap-1">
           <Link to='/' className=' cursor-pointer text-[19px] font-[400] hovet:text-main'>Home</Link>

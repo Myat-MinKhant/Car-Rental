@@ -1,9 +1,9 @@
-import Golf6 from "../assets/cars-img/VW Golf 6.png";
-import AudiA1 from "../assets/cars-img/Audi A1 S-Line.webp";
-import Toyota from "../assets/cars-img/Toyota Camry.webp";
-import Bmw320 from "../assets/cars-img/BMW 320 ModernLine.jpg";
-import Benz from "../assets/cars-img/Mercedes-Benz GLK.webp";
-import Passat from "../assets/cars-img/VW Passat CC1.webp";
+import Golf6 from "../../assets/cars-img/VW Golf 6.png";
+import AudiA1 from "../../assets/cars-img/Audi A1 S-Line.webp";
+import Toyota from "../../assets/cars-img/Toyota Camry.webp";
+import Bmw320 from "../../assets/cars-img/BMW 320 ModernLine.jpg";
+import Benz from "../../assets/cars-img/Mercedes-Benz GLK.webp";
+import Passat from "../../assets/cars-img/VW Passat CC1.webp";
 
 const cars_data = [
     {

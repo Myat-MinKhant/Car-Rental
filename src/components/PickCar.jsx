@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import cars from './CarData'
+import cars from './data/CarData'
 
 export default function PickCar({ click }) {
     const [isActive, setIsActive] = useState(1)

@@ -4,7 +4,7 @@ import StartQuote from '../assets/quotation1.png';
 import EndQuote from '../assets/quotation2.png';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import reviews from './ReviewData';
+import reviews from './data/ReviewData';
 export default function Testimonial() {
     return (
         <section className=" w-[80vw] m-auto pb-20 relative text-center mt-32">
