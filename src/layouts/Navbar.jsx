@@ -1,18 +1,21 @@
 import { useState } from 'react'
 import logo from '../assets/logo.png'
+import { Link } from 'react-router-dom'
 
 export default function Navbar() {
     const [open, setOpen] = useState('')
 
     return (
         <nav className='w-screen h-20 flex flex-wrap items-center px-3 laptop:px-7 justify-between desktop:px-20'>
-            <div className=' flex gap-3 mt-3 cursor-pointer'>
-                <img src={logo} alt="logo" width={80} />
-                <div className=' mt-2'>
-                    <h4 className=' text-2xl font-bold uppercase'>Car</h4>
-                    <span className=' text-lg'>Rental</span>
+            <Link to='/'>
+                <div className=' flex gap-3 mt-3 cursor-pointer'>
+                    <img src={logo} alt="logo" width={80} />
+                    <div className=' mt-2'>
+                        <h4 className=' text-2xl font-bold uppercase'>Car</h4>
+                        <span className=' text-lg'>Rental</span>
+                    </div>
                 </div>
-            </div>
+            </Link>
 
             <div>
                 <div>

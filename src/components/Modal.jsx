@@ -13,8 +13,10 @@ export default function PopUpModal(props) {
         <Modal show={openModal === 'pop-up'} size="4xl" popup onClose={() => setOpenModal(null)}>
             <Modal.Body className=' p-[4px]'>
                 <div role='rental-info' className=' border-b border-zinc-400'>
-                    <h3 className=' text-white uppercase bg-main font-bold text-3xl py-3 pl-3 tablet:pl-5 relative'>Complete reservation
-                        <button aria-label="Close" className="absolute right-2 bottom-9 tablet:right-3 tablet:bottom-4 text-white hover:text-gray-200" type="button" onClick={() => setOpenModal(undefined)}>
+                    <h3 className=' text-white uppercase bg-main font-bold text-3xl py-3 pl-5 
+            mobileM:pr-[54px] tablet:pl-7 relative'>Complete reservation
+                        <button aria-label="Close" className="absolute right-2 bottom-9 mobileM:bottom-9
+                        mobileL:bottom-4 tablet:right-3 tablet:bottom-4 text-white hover:text-gray-200" type="button" onClick={() => setOpenModal(undefined)}>
                             <svg stroke="currentColor" fill="none" strokeWidth="3" viewBox="0 0 24 24" aria-hidden="true" className="h-7 w-7" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg>
                         </button>
                     </h3>

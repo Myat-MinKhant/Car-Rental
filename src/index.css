@@ -149,6 +149,11 @@ a:hover {
     @apply w-full tablet:w-[97.5%] bg-neutral-300 border-0 pl-3
 }
 
+.contact-input {
+    @apply w-full tablet:w-[97.5%] bg-white border-0
+
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;

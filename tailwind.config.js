@@ -8,6 +8,8 @@ export default {
   theme: {
     screens: {
       mobile: '0px',
+      mobileM: '447px',
+      mobileL: '500px',
       tablet: '760px',
       laptop: '1024px',
       desktop: '1440px',
