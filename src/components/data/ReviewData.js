@@ -1,7 +1,7 @@
-import img1 from '../assets/review-img/review1.jpg'
-import img2 from '../assets/review-img/review2.jpg'
-import img3 from '../assets/review-img/review3.jpg'
-import img4 from '../assets/review-img/review4.jpg'
+import img1 from '../../assets/review-img/review1.jpg'
+import img2 from '../../assets/review-img/review2.jpg'
+import img3 from '../../assets/review-img/review3.jpg'
+import img4 from '../../assets/review-img/review4.jpg'
 
 const reviews = [
     {
