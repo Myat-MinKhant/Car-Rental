@@ -16,6 +16,7 @@ html {
     background-color: #f3f3f3;
     color: #010103;
     user-select: none;
+    scroll-behavior: smooth; 
 }
 
 h1 {
@@ -181,4 +182,13 @@ input::-webkit-inner-spin-button {
 
 .open-nav {
     left: 0;
+}
+
+.show-scroll {
+    @apply flex
+}
+
+.scroll-up {
+    @apply justify-center items-center bg-main cursor-pointer fixed text-center z-10
+    border-[3px] border-solid border-white p-[1.2rem] w-8 h-4 bottom-20 right-20 text-white
 }

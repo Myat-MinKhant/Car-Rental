@@ -42,7 +42,7 @@ export default function Search() {
 
     return (
         <section className=" w-full shadow-2xl rounded-md mt-32">
-            <h2 className="font-bold pl-5 text-3xl tablet:pl-10 laptop:pl-6 pt-10">Search your car</h2>
+            <h2 className="font-bold pl-5 text-3xl tablet:pl-10 laptop:pl-7 pt-10 laptop:mb-3">Search your car</h2>
             <Alert className={`${alert} bg-red-200 w-[93%] m-auto mt-3 font-medium relative py-5`}>
                 <span>
                     <p>

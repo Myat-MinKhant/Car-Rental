@@ -17,10 +17,19 @@ export default function Testimonial() {
                 style={{
                     "--swiper-pagination-color": "#ff4d30",
                 }}
-                slidesPerView={1}
                 pagination={{ clickable: true, }}
                 modules={[Pagination]}
                 className=" w-full"
+                breakpoints={{
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 20
+                    },
+                    1000: {
+                        slidesPerView: 2,
+                        spaceBetween: 20
+                    }
+                }}
             >
                 {reviews.map(review => (
                     <SwiperSlide key={review.id}>

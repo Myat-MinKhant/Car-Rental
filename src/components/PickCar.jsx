@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import cars from './CarData'
 
-export default function PickCar() {
+export default function PickCar({ click }) {
     const [isActive, setIsActive] = useState(1)
     const [isPick, setIsPick] = useState([cars[0]])
     const names = [...cars.reduce((s, o) => (Object.keys(o).forEach(k => s.add(k)), s), new Set)];
@@ -9,6 +9,7 @@ export default function PickCar() {
     const infos = names.map((x, i) => {
         return { "name": x, "value": values[i] }
     });
+
     // console.log(names);
     // console.log(infos);
 
@@ -32,7 +33,7 @@ export default function PickCar() {
                     adventure or business trip
                 </p>
             </div>
-            <div className='w-full mt-16 flex flex-col gap-10 laptop:flex-row laptop:px-5 laptop:gap-0   desktop:px-20 desktop:gap-10 laptop:justify-center'>
+            <div className='w-full mt-16 flex flex-col gap-10 laptop:flex-row laptop:px-5 laptop:gap-0 desktop:px-20 desktop:gap-10 laptop:justify-center'>
                 <div className=" flex flex-col w-full tablet:px-5 laptop:w-fit laptop:px-0" >
                     {cars.map(car => (
                         <button onClick={() => handleClick(car.id)} key={car.id} className={`pick-car-btn ${coloringButton(car.id)}`}>{car.name}</button>
@@ -41,7 +42,7 @@ export default function PickCar() {
 
                 <div className='flex flex-col gap-12 tablet:flex-row tablet:gap-5 tablet:px-5 desktop:pr-0 desktop:gap-10 laptop:gap-10'>
                     <div className=' w-full h-fit m-auto laptop:m-0 pt-5 tablet:pt-7 tablet:w-1/2 laptop:w-[500px] desktop:w-[700px] laptop:pt-0'>
-                        <img src={isPick[0].img} alt={isPick[0].model} className='w-full tablet:h-[360px] laptop:h-[400px] desktop:h-[450px]'/>
+                        <img src={isPick[0].img} alt={isPick[0].model} className='w-full tablet:h-[360px] laptop:h-[400px] desktop:h-[450px]' />
                     </div>
 
                     <div className=' w-full tablet:w-1/2 laptop:w-[40%]'>
@@ -66,7 +67,7 @@ export default function PickCar() {
                             ))}
                         </table>
 
-                        <button className=' w-full bg-main text-2xl font-medium text-white uppercase py-3 mt-3 hover:bg-[#f1371e]'>Reserve now</button>
+                        <button className=' w-full bg-main text-2xl font-medium text-white uppercase py-3 mt-3 hover:bg-[#f1371e]' onClick={click}>Reserve now</button>
                     </div>
                 </div>
             </div>

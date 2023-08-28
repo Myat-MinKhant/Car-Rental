@@ -1,12 +1,34 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import logo from '../assets/logo.png'
 import { Link } from 'react-router-dom'
 
 export default function Navbar() {
     const [open, setOpen] = useState('')
+    const [isVisible, setIsVisible] = useState(false)
+
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                setIsVisible(true);
+            } else {
+                setIsVisible(false);
+            }
+        });
+    }, []);
+
+    const showButton = () => {
+        return isVisible === true ? 'show-scroll' : '';
+    }
+
+    const scrollToTop = () => {
+        window.scrollTo(0, 0)
+    };
 
     return (
         <nav className='w-screen h-20 flex flex-wrap items-center px-3 laptop:px-7 justify-between desktop:px-20'>
+            <div className={` scroll-up hidden ${showButton()}`} onClick={scrollToTop}>
+            <i className="fa-solid fa-chevron-up text-white z-30" />
+            </div>
             <Link to='/'>
                 <div className=' flex gap-3 mt-3 cursor-pointer'>
                     <img src={logo} alt="logo" width={80} />
@@ -51,6 +73,6 @@ export default function Navbar() {
                 <p className=' signin-btn'>Sign in</p>
                 <button className=' register-btn '>Register</button>
             </div>
-        </nav>
+        </nav >
     )
 }
