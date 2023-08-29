@@ -9,7 +9,7 @@ import Testimonial from "../components/Testimonial"
 
 const Landing = () => {
     const scrollToDiv = (ref) => window.scrollTo(0, ref.current.offsetTop);
-    const search = useRef();
+    const search = useRef()
 
     return (
         <>
